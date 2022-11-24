@@ -1,5 +1,6 @@
 package com.example.projectdc.contoller
 
+
 import com.example.projectdc.model.Client
 import com.example.projectdc.service.ClientService
 import org.springframework.beans.factory.annotation.Autowired
@@ -41,4 +42,3 @@ class ClientController {
         return ResponseEntity(clientService.updateName(client), HttpStatus.OK)
     }
 }
-

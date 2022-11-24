@@ -1,21 +1,21 @@
 package com.example.projectdc.model
 
+import java.util.Date
 import javax.persistence.*
 import javax.validation.constraints.NotBlank
 
 @Entity
-@Table(name = "client")
+@Table(name = "detail")
 
-class Client {
+class Detail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(updatable = false)
     var id: Long? = null
-    var nui: String? = null
+    var quantity: Long? = null
 
-    @NotBlank
-    var fullname: String? = null
-
-    @NotBlank
-    var address: String? = null
+    @Column(name="invoice_id")
+    var invoiceId: Long? = null
+    @Column(name="product_id")
+    var productId: Long? = null
 }
