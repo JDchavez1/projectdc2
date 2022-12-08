@@ -18,4 +18,5 @@ class Product {
     var brand: String? = null
 
     var stock: Long? = null
+    var price: Double?=null
 }
